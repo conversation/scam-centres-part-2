@@ -1,0 +1,156 @@
+import { ARTICLEWIDTH } from './util/constants'
+import Image from './components/Image'
+import BackgroundImage from './components/BackgroundImage'
+import { ScrollSection, ScrollForeground, ScrollTextChapter, ScrollBackground } from './components/ScrollSection'
+import TitleSection from './components/TitleSection'
+import Picture from './components/Picture'
+import PigButcheringSection from './components/PigButcheringSection'
+import PhrasebookScramble from './components/PhrasebookScramble'
+import ArticleSetup from './context/ArticleSetup'
+import AuthorSection, { Editorial, Author, Editors, Authors, Disclosures, Acknowledgements } from './components/Authors'
+
+<ArticleSetup
+  theme='dark'
+  title='Part 1b'
+  dropCap={true}
+  author='Ivan Franceschini & Ling Li'
+  image='https://images.theconversation.com/files/629474/original/file-20241101-17-hvuwhr.png?auto=format&fit=crop&q=30&ixlib=react-9.10.0&w=1946'
+  keywords={['Southeast Asia', 'Myanmar', 'scam', 'scam centre', 'scammers', 'Chinese scams']}
+  standfirst="Inside Southeast Asia's slavery scam centres"
+/>
+
+<h1 className='font-base'>Scammed! Perpetrators are the victims</h1>
+<h3 className='font-base'>Scam centres of South-East Asia Part 1</h3>
+
+<div>
+  <p className='text-sm font-base'>By [Ivan Franceschini](https://theconversation.com/profiles/ivan-franceschini-1529038), [Ling Li](https://theconversation.com/profiles/ling-li-1529042) and The Conversation [Digital Storytelling Team]() </p>
+  <time className='text-xs font-base opacity-50'>{new Date().toDateString()}</time>
+</div>
+
+Our interviews with dozens of victims revealed the types of scams run from compounds across South-East Asia in astonishing detail.
+
+The scammers are the perpetrators of these crimes, but they are often victims themselves, too. You can read about this in part 1 of this four-part series.
+
+Here we share with you some of the most visible and widely reported schemes originating from scam centres.
+
+## The pig-butchering scams
+
+Scams involving cryptocurrency, including those commonly called "[pig butchering](https://www.afp.gov.au/news-centre/media-release/pig-butchering-scam-targeting-australians-afp-warns-lonely-hearts-be-wary)", are one commonwere the most common type. 
+
+According to a [new study](https://time.com/6836703/pig-butchering-scam-victim-loss-money-study-crypto/) at the University of Texas-Austin, pig-butchering scams resulted in losses of US$75 billion (A$119 billion) from victims around the world in just four years (2020–24).
+
+"Pig butchering" scams (or sha zhu pan in Mandarin) sit at the intersection of traditional romance and investment scams. They generally entail four stages: 
+
+* pig finding (zhao zhu)
+* pig feeding (wei zhu)
+* pig grooming (yang zhu) 
+* pig slaughtering (sha zhu) 
+
+First, scammers create fake profiles and search for targets (whom they refer to as "pigs") on social media or by sending "wrong number" text messages. Once they find a target, they start "feeding" their victims attention. They engage in long conversations, some of which last for months. They also send the victims gifts. 
+
+Then, the "pig-grooming period" begins, when the scammers try to persuade their marks to take part in fake investment, cryptocurrency or foreign exchange schemes on platforms they have created. To keep their victims on the hook, these apps or websites will appear to show their investments initially gaining value. 
+
+When a victim begins to get suspicious or asks to cash out, the scammers will move to "pig slaughtering" – locking them out of the app and vanishing.
+
+One pig butchering scam victim who spoke to us described how she was approached through WhatsApp.
+
+<PigButcheringSection />
+
+## The fake officials
+
+Another common strategy involves the impersonation of law enforcement officials. 
+One of our interviewees, a young Chinese graduate student in the United Kingdom, told us about a call she received from someone claiming to be from the Chinese embassy in London. 
+
+The student was told she was in trouble. She was immediately suspicious and checked the number on the embassy website – it matched. Scammers do this by using caller ID “spoofing” technology. The call was then transferred to someone claiming to be from the Shanghai police, who said the student was a suspect in a case involving forged passports and money laundering.
+
+Later, another "police officer" sent her what he claimed was an arrest warrant on Telegram and set up a video call to record her "testimony". 
+
+The calls continued daily for almost two months. Eventually, the student fell under the scammer's complete control. He told her to transfer RMB500,000 (roughly A$108,000) to a designated "safe account", which would be held in escrow until the allegations against her were cleared up. She complied – and the scammers vanished.
+
+Scams like these are highly scripted frauds that entail intensive training on how to use specific tools and dedicated phrasebooks, such as the one below. 
+
+<PhrasebookScramble />
+
+## The Kidnappings
+
+In recent years, the media has been awash with disturbing reports of a new scam technique – persuading young Chinese victims to stage their own kidnappings. 
+
+For instance, in October 2022, two students living in Singapore [were contacted](https://www.channelnewsasia.com/singapore/staged-kidnap-scam-victims-students-cambodia-singapore-fake-china-police-3030701) by fake police officers who said they were being investigated for spreading misinformation about mpox and COVID. 
+
+They were told to fly to Cambodia to assist in the investigation, but once there, were forced to make videos pretending to be kidnapped. The videos were then sent to their parents with ransom demands totalling RMB2.8 million (A$585,000). 
+
+Kidnappings are not always staged. According to [Chinese-language media](https://mp.weixin.qq.com/s/R2wyviAOrQ2nubERegvcuw) in Cambodia, a 23-year-old Chinese student in New Zealand was similarly contacted by fake police and told she was under investigation for money laundering and sending harassing text messages.
+
+She received what appeared to be official-looking documents, including an arrest warrant, but was told if she agreed to be a witness, she would avoid prosecution. After she flew to Cambodia, she was whisked to a compound where she was tortured. This included her finger being chopped off with a cleaver.
+
+A video was sent to her family with a demand for a ransom of 5 million yuan (A$1 million). She was later rescued by local police.
+
+## The e-commerce and loan scams 
+
+While many of these scams require substantial investments in time and manpower, others are smaller in scale. And perpetrated at volume, they can also be lucrative.
+
+These include e-commerce scams on mainstream online marketplaces. Victims are lured by low-priced products. After they make a purchase, they are contacted by the seller (a scammer) who persuades them to pay via a separate digital platform. The item then never arrives.
+
+Predatory loan scams are also pervasive, particularly in India, where they have been widely reported on. In these operations, victims are tricked by ads on social media for easy, no-questions-asked loans. These are sometimes straightforward scams – victims are told to deposit an small amount of money before the loan “clears”, and this money vanishes. 
+
+In other cases, the scammers will provide the loan, but then harass and intimidate the victim after it’s been repaid, with demands for exorbitant fees and interest.
+
+<AuthorSection>
+ <Acknowledgements>
+  A special thank you to Mark Bo who contributed much of the data, as well as monitoring the digital footprint of these scam centres.
+  </Acknowledgements>
+
+ <Editorial>
+    <Authors>
+      <Author
+      name='Ivan Franceschini'
+      affiliation='The University of Melbourne'
+      affiliationLink='https://theconversation.com/institutions/the-university-of-melbourne-722'
+      imgSrc='https://cdn.theconversation.com/avatars/1529038/width238/getimage_345eee4d-e639-4cfa-8991-492b0459f47a.jpg'
+      profileLink='https://theconversation.com/profiles/ivan-franceschini-1529038'
+      title='Lecturer, Chinese Studies'
+      />
+      <Author
+      name='Ling Li'
+      affiliation="Ca' Foscari University of Venice"
+      affiliationLink='https://theconversation.com/institutions/ca-foscari-university-of-venice-4378'
+      imgSrc='https://cdn.theconversation.com/avatars/1529042/width238/file-20240726-17-rt9b0t.jpg'
+      profileLink='https://theconversation.com/profiles/ling-li-1529042'
+      title='PhD candidate'
+      />
+    </Authors>
+
+    <Editors>
+      <Author
+        name='Justin Bergman'
+        affiliation=''
+        affiliationLink=''
+        imgSrc='https://cdn.theconversation.com/avatars/470587/width238/image-20191027-113962-mmopio.jpg'
+        profileLink='https://theconversation.com/profiles/justin-bergman-470587'
+        title='Senior Editor'
+      />
+
+      <Author
+        name='Matt Garrow'
+        affiliation=''
+        affiliationLink=''
+        imgSrc='https://cdn.theconversation.com/avatars/1474685/width238/image-20241104-15-rjlv0v.jpg'
+        profileLink='https://theconversation.com/profiles/matt-garrow-1474685'
+        title='Editorial Web Developer'
+      />
+
+      <Author
+        name='Ashlynne McGhee'
+        affiliation=''
+        affiliationLink=''
+        imgSrc='https://cdn.theconversation.com/avatars/1544096/width238/image-20240715-17-v7r5ob.jpg'
+        profileLink='https://theconversation.com/profiles/ashlynne-mcghee-1544096'
+        title='Digital Storytelling Editor'
+      />
+    </Editors>
+  </Editorial>
+
+<Disclosures>
+  The authors do not work for, consult, own shares in or receive funding from any company or organisation that would benefit from this article, and have disclosed no relevant affiliations beyond their academic appointment.
+</Disclosures>
+</AuthorSection>
