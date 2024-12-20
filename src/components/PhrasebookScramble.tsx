@@ -14,7 +14,7 @@ export default function PhrasebookScramble() {
       const tl = gsap
         .timeline({
           scrollTrigger: {
-            markers: true,
+            // markers: true,
             trigger: sectionRef.current,
             start: 'center center',
             end: 'center center',
@@ -71,7 +71,7 @@ export default function PhrasebookScramble() {
         )
 
       ScrollTrigger.create({
-        markers: true,
+        // markers: true,
         trigger: sectionRef.current,
         start: 'top bottom',
         end: 'bottom top',
@@ -95,7 +95,7 @@ export default function PhrasebookScramble() {
         sourceLink='https://mp.weixin.qq.com/s/zWe0PWrW3TUQlGnX67ZFKA'
       />
 
-      <div className='not-prose w-image-width absolute left-1/2 top-0 h-full -translate-x-1/2'>
+      <div className='not-prose absolute left-1/2 top-0 h-full w-image-width -translate-x-1/2'>
         <div className='absolute left-[5%] top-[5%] w-[95%] md:w-[80%]'>
           <span id='scramble1' className='bg-neutral-900 py-1'></span>
         </div>

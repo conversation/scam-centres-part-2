@@ -8,6 +8,7 @@ import PigButcheringSection from './components/PigButcheringSection'
 import PhrasebookScramble from './components/PhrasebookScramble'
 import ArticleSetup from './context/ArticleSetup'
 import AuthorSection, { Editorial, Author, Editors, Authors, Disclosures, Acknowledgements } from './components/Authors'
+import Readmore from './components/Readmore'
 
 <ArticleSetup
   theme='dark'
@@ -19,12 +20,12 @@ import AuthorSection, { Editorial, Author, Editors, Authors, Disclosures, Acknow
   standfirst="Inside Southeast Asia's slavery scam centres"
 />
 
-<h1 className='font-base'>Scammed! Perpetrators are the victims</h1>
-<h3 className='font-base'>Scam centres of South-East Asia Part 1</h3>
+<h1 className='font-base pt-40'>Anatomy of a scam</h1>
+<h3 className='font-base'>Scam centres of South-East Asia Part 1b</h3>
 
 <div>
-  <p className='text-sm font-base'>By [Ivan Franceschini](https://theconversation.com/profiles/ivan-franceschini-1529038), [Ling Li](https://theconversation.com/profiles/ling-li-1529042) and The Conversation [Digital Storytelling Team]() </p>
-  <time className='text-xs font-base opacity-50'>{new Date().toDateString()}</time>
+  <p className='text-sm font-base inline-block'>By [Ivan Franceschini](https://theconversation.com/profiles/ivan-franceschini-1529038), [Ling Li](https://theconversation.com/profiles/ling-li-1529042) and The Conversation [Digital Storytelling Team]()</p>{' '}
+  <span><time className='text-xs font-base opacity-50'>{new Date().toDateString()}</time></span>
 </div>
 
 Our interviews with dozens of victims revealed the types of scams run from compounds across South-East Asia in astonishing detail.
@@ -70,6 +71,8 @@ The calls continued daily for almost two months. Eventually, the student fell un
 Scams like these are highly scripted frauds that entail intensive training on how to use specific tools and dedicated phrasebooks, such as the one below. 
 
 <PhrasebookScramble />
+
+<Readmore description='This is a four-part series on the slavery scam compounds of South-East Asia.' url='' linkText='Read part 3 on the growth of the scam industry'/>
 
 ## The Kidnappings
 
