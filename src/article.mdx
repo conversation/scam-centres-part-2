@@ -9,6 +9,7 @@ import PhrasebookScramble from './components/PhrasebookScramble'
 import ArticleSetup from './context/ArticleSetup'
 import AuthorSection, { Editorial, Author, Editors, Authors, Disclosures, Acknowledgements } from './components/Authors'
 import Readmore from './components/Readmore'
+import TitleTextBorder from './components/TitleTextBorder'
 
 <ArticleSetup
   theme='dark'
@@ -20,12 +21,15 @@ import Readmore from './components/Readmore'
   standfirst="Inside Southeast Asia's slavery scam centres"
 />
 
-<h1 className='font-base pt-40'>Anatomy of a scam</h1>
-<h3 className='font-base'>Scam centres of South-East Asia Part 1b</h3>
+<div className='mx-auto max-w-[45ch] text-center pt-40'>
+  <TitleTextBorder as={'h1'} className='text-balance text-center font-base text-4xl font-bold md:text-5xl lg:text-6xl'>Anatomy of a scam</TitleTextBorder>
+</div>
 
-<div>
-  <p className='text-sm font-base inline-block'>By [Ivan Franceschini](https://theconversation.com/profiles/ivan-franceschini-1529038), [Ling Li](https://theconversation.com/profiles/ling-li-1529042) and The Conversation [Digital Storytelling Team]()</p>{' '}
-  <span><time className='text-xs font-base opacity-50'>{new Date().toDateString()}</time></span>
+<h3 className='font-base text-center'>Scam centres of South-East Asia Part 1b</h3>
+
+<div className='text-center mb-14'>
+  <p className='text-sm font-base inline-block m-0'>By [Ivan Franceschini](https://theconversation.com/profiles/ivan-franceschini-1529038), [Ling Li](https://theconversation.com/profiles/ling-li-1529042) and The Conversation [Digital Storytelling Team]()</p><br/>
+  <span className='text-xs font-base opacity-50 m-0'>Published <time >{new Date().toDateString()}</time></span>
 </div>
 
 Our interviews with dozens of victims revealed the types of scams run from compounds across South-East Asia in astonishing detail.
