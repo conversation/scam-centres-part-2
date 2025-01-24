@@ -10,6 +10,7 @@ import ArticleSetup from './context/ArticleSetup'
 import AuthorSection, { Editorial, Author, Editors, Authors, Disclosures, Acknowledgements } from './components/Authors'
 import Readmore from './components/Readmore'
 import TitleTextBorder from './components/TitleTextBorder'
+import TitleImage from './components/TitleImage'
 
 <ArticleSetup
   theme='dark'
@@ -21,9 +22,9 @@ import TitleTextBorder from './components/TitleTextBorder'
   standfirst="What kinds of scams are run by Southeast Asia’s brutal scamming industry and how do they work?"
 />
 
+<TitleImage />
 
-
-<div className='place-content-center pt-40 mb-20'>
+<div className='place-content-center mb-10 pt-[35vh]'>
   <div className='mx-auto max-w-[45ch] text-center'>
     <TitleTextBorder
     as={'h1'}
@@ -123,6 +124,7 @@ In other cases, the scammers will provide the loan, but then harass and intimida
 
 In part three of our series tomorrow, we’ll look more closely at the rapid growth of scamming enterprises in Southeast Asia and who’s pulling the strings at the top of the multi-billion dollar industry.
 
+
 <AuthorSection>
  <Acknowledgements>
   A special thank you to Mark Bo who contributed much of the data, as well as monitoring the digital footprint of these scam centres.
@@ -175,10 +177,19 @@ In part three of our series tomorrow, we’ll look more closely at the rapid gro
         profileLink='https://theconversation.com/profiles/ashlynne-mcghee-1544096'
         title='Digital Storytelling Editor'
       />
+
+      <Author
+        name='Gemma Ware'
+        affiliation=''
+        affiliationLink=''
+        imgSrc='https://cdn.theconversation.com/avatars/113435/width238/image-20211116-21-1prksw5.jpg'
+        profileLink='https://theconversation.com/profiles/gemma-ware-113435'
+        title='Head of Audio, The Conversation UK'
+      />
     </Editors>
   </Editorial>
 
-<Disclosures>
-  The authors do not work for, consult, own shares in or receive funding from any company or organisation that would benefit from this article, and have disclosed no relevant affiliations beyond their academic appointment.
-</Disclosures>
+  <Disclosures>
+    The authors do not work for, consult, own shares in or receive funding from any company or organisation that would benefit from this article, and have disclosed no relevant affiliations beyond their academic appointment.
+  </Disclosures>
 </AuthorSection>
