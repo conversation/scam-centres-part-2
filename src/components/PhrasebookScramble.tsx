@@ -88,6 +88,7 @@ export default function PhrasebookScramble() {
         src='https://images.theconversation.com/files/620411/original/file-20240919-16-tzhkq1.png'
         align=''
         className=''
+        imgClassName='aspect-[927/634]'
         loading='eager'
         caption='Handwritten copy of some passages of a scam phrase book'
         alt='Handwritten copy of some passages of a scam phrase book'
