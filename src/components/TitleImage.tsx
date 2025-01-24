@@ -25,7 +25,7 @@ export default function TitleImage() {
         src='https://images.theconversation.com/files/611288/original/file-20240805-19-7eu4yr.jpg'
         loading='eager'
         className='full_screen_media not-prose absolute left-0 top-0 z-0 !h-[50vh] overflow-hidden opacity-50'
-        imgClassName='not_fullscreen_media w-screen h-[50vh] object-cover object-top title_picture'
+        imgClassName='not_fullscreen_media w-screen h-[50vh] object-cover object-bottom title_picture'
         caption=''
         source='Photo: Roun Ry'
         sourceLink=''
