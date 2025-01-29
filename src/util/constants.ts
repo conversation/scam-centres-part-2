@@ -29,5 +29,5 @@ export const widthsQualities = [
   { w: 700, q: 15, dpr: 3 },
   { w: 960, q: 20, dpr: 2 },
   { w: 1400, q: 20, dpr: 2 },
-  { w: 2100, q: 45, dpr: 1 }
+  { w: 2100, q: 20, dpr: 1 }
 ]
