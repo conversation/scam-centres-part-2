@@ -1,6 +1,7 @@
 import ScrollTrigger from 'gsap/ScrollTrigger'
 import { useGSAP } from '@gsap/react'
 import { useRef } from 'react'
+import Imgix from 'react-imgix'
 
 export default function PigButcheringSection() {
   const sectionRef = useRef<HTMLElement | null>(null)
@@ -55,14 +56,37 @@ export default function PigButcheringSection() {
             <div className='absolute bottom-1 right-2 flex gap-1 text-sm text-neutral-400'>
               <p>9:56 am</p>
 
-              <img
+              <Imgix
                 className='inline w-5'
-                loading='eager'
-                data-path='files/617201/original/file-20240904-16-xvj31z.png'
-                alt=''
-                data-params='{}'
+                imgixParams={{
+                  fit: 'crop',
+                  auto: 'format',
+                  q: 30
+                }}
+                htmlAttributes={{
+                  loading: 'lazy',
+                  width: '100%',
+                  height: 'auto'
+                }}
+                src='https://images.theconversation.com/files/617201/original/file-20240904-16-xvj31z.png'
                 sizes='(max-width: 599px) 100px, (min-width: 600px) 100px, 100px'
               />
+
+              {/* <Imgix
+                className='inline w-5'
+                imgixParams={{
+                  fit: 'crop',
+                  auto: 'format',
+                  q: 30
+                }}
+                htmlAttributes={{
+                  loading: 'lazy',
+                  width: '100%',
+                  height: 'auto'
+                }}
+                src='https://images.theconversation.com/files/617201/original/file-20240904-16-xvj31z.png'
+                sizes='(max-width: 599px) 100px, (min-width: 600px) 100px, 100px'
+              /> */}
             </div>
           </div>
 
@@ -90,12 +114,19 @@ export default function PigButcheringSection() {
             <div className='absolute bottom-1 right-2 flex gap-1 text-sm text-neutral-400'>
               <p>9:57 am</p>
 
-              <img
+              <Imgix
                 className='inline w-5'
-                loading='eager'
-                data-path='files/617201/original/file-20240904-16-xvj31z.png'
-                alt=''
-                data-params='{}'
+                imgixParams={{
+                  fit: 'crop',
+                  auto: 'format',
+                  q: 30
+                }}
+                htmlAttributes={{
+                  loading: 'lazy',
+                  width: '100%',
+                  height: 'auto'
+                }}
+                src='https://images.theconversation.com/files/617201/original/file-20240904-16-xvj31z.png'
                 sizes='(max-width: 599px) 100px, (min-width: 600px) 100px, 100px'
               />
             </div>
@@ -119,12 +150,19 @@ export default function PigButcheringSection() {
             <div className='absolute bottom-1 right-2 flex gap-1 text-sm text-neutral-400'>
               <p>9:57 am</p>
 
-              <img
+              <Imgix
                 className='inline w-5'
-                loading='eager'
-                data-path='files/617201/original/file-20240904-16-xvj31z.png'
-                alt=''
-                data-params='{}'
+                imgixParams={{
+                  fit: 'crop',
+                  auto: 'format',
+                  q: 30
+                }}
+                htmlAttributes={{
+                  loading: 'lazy',
+                  width: '100%',
+                  height: 'auto'
+                }}
+                src='https://images.theconversation.com/files/617201/original/file-20240904-16-xvj31z.png'
                 sizes='(max-width: 599px) 100px, (min-width: 600px) 100px, 100px'
               />
             </div>
@@ -148,12 +186,19 @@ export default function PigButcheringSection() {
             <div className='absolute bottom-1 right-2 flex gap-1 text-sm text-neutral-400'>
               <p>10:01 am</p>
 
-              <img
+              <Imgix
                 className='inline w-5'
-                loading='eager'
-                data-path='files/617201/original/file-20240904-16-xvj31z.png'
-                alt=''
-                data-params='{}'
+                imgixParams={{
+                  fit: 'crop',
+                  auto: 'format',
+                  q: 30
+                }}
+                htmlAttributes={{
+                  loading: 'lazy',
+                  width: '100%',
+                  height: 'auto'
+                }}
+                src='https://images.theconversation.com/files/617201/original/file-20240904-16-xvj31z.png'
                 sizes='(max-width: 599px) 100px, (min-width: 600px) 100px, 100px'
               />
             </div>
@@ -193,22 +238,24 @@ export default function PigButcheringSection() {
       </p>
 
       <figure className='not-prose mx-auto my-10 max-w-[600px] px-8 font-base'>
-        <div className='message_bubble message_bubble_left relative mb-2 mr-auto rounded-b-lg rounded-r-lg bg-neutral-50 p-3 pb-5 text-neutral-900 opacity-100 drop-shadow-lg'>
-          <img
-            className='mb-4 rounded-md'
-            loading='eager'
-            alt=''
-            sizes='(max-width: 599px) 100vw, (min-width: 600px) 750px, 800px'
-            srcSet='
-          https://images.theconversation.com/files/617505/original/file-20240905-18-tggyau.jpg?ixlib=rb-4.1.0&amp;q=45&amp;auto=format,compress&amp;cs=srgb&amp;w=600&amp;fit=crop&amp;dpr=1  600w,
-          https://images.theconversation.com/files/617505/original/file-20240905-18-tggyau.jpg?ixlib=rb-4.1.0&amp;q=30&amp;auto=format,compress&amp;cs=srgb&amp;w=600&amp;fit=crop&amp;dpr=2 1200w,
-          https://images.theconversation.com/files/617505/original/file-20240905-18-tggyau.jpg?ixlib=rb-4.1.0&amp;q=15&amp;auto=format,compress&amp;cs=srgb&amp;w=600&amp;fit=crop&amp;dpr=3 1800w,
-          https://images.theconversation.com/files/617505/original/file-20240905-18-tggyau.jpg?ixlib=rb-4.1.0&amp;q=45&amp;auto=format,compress&amp;cs=srgb&amp;w=754&amp;fit=crop&amp;dpr=1  754w,
-          https://images.theconversation.com/files/617505/original/file-20240905-18-tggyau.jpg?ixlib=rb-4.1.0&amp;q=30&amp;auto=format,compress&amp;cs=srgb&amp;w=754&amp;fit=crop&amp;dpr=2 1508w,
-          https://images.theconversation.com/files/617505/original/file-20240905-18-tggyau.jpg?ixlib=rb-4.1.0&amp;q=15&amp;auto=format,compress&amp;cs=srgb&amp;w=754&amp;fit=crop&amp;dpr=3 2262w
-        '
-            src='https://images.theconversation.com/files/617505/original/file-20240905-18-tggyau.jpg?ixlib=rb-4.1.0&amp;q=45&amp;auto=format,compress&amp;cs=srgb&amp;w=754&amp;fit=clip'
-          />
+        <div className='message_bubble message_bubble_left relative mb-2 mr-auto w-screen rounded-b-lg rounded-r-lg bg-neutral-50 p-3 pb-5 text-neutral-900 opacity-100 drop-shadow-lg'>
+          <div className='mb-4'>
+            <Imgix
+              className='aspect-[229/497] max-h-[500px] w-full rounded-md object-cover object-[50%_35%]'
+              imgixParams={{
+                fit: 'crop',
+                auto: 'format',
+                q: 15
+              }}
+              htmlAttributes={{
+                loading: 'lazy',
+                width: '100%',
+                height: 'auto'
+              }}
+              src='https://images.theconversation.com/files/617505/original/file-20240905-18-tggyau.jpg'
+              sizes='(max-width: 599px) 100vw, (min-width: 600px) 750px, 800px'
+            />
+          </div>
 
           <div className='absolute bottom-1 right-2 flex gap-1 text-sm text-neutral-400'>
             <p>2:43 pm</p>
@@ -255,12 +302,19 @@ export default function PigButcheringSection() {
             <div className='absolute bottom-1 right-2 flex gap-1 text-sm text-neutral-400'>
               <p>10:22 pm</p>
 
-              <img
+              <Imgix
                 className='inline w-5'
-                loading='eager'
-                data-path='files/617201/original/file-20240904-16-xvj31z.png'
-                alt=''
-                data-params='{}'
+                imgixParams={{
+                  fit: 'crop',
+                  auto: 'format',
+                  q: 30
+                }}
+                htmlAttributes={{
+                  loading: 'lazy',
+                  width: '100%',
+                  height: 'auto'
+                }}
+                src='https://images.theconversation.com/files/617201/original/file-20240904-16-xvj31z.png'
                 sizes='(max-width: 599px) 100px, (min-width: 600px) 100px, 100px'
               />
             </div>
@@ -293,12 +347,19 @@ export default function PigButcheringSection() {
             <div className='absolute bottom-1 right-2 flex gap-1 text-sm text-neutral-400'>
               <p>10:23 pm</p>
 
-              <img
+              <Imgix
                 className='inline w-5'
-                loading='eager'
-                data-path='files/617201/original/file-20240904-16-xvj31z.png'
-                alt=''
-                data-params='{}'
+                imgixParams={{
+                  fit: 'crop',
+                  auto: 'format',
+                  q: 30
+                }}
+                htmlAttributes={{
+                  loading: 'lazy',
+                  width: '100%',
+                  height: 'auto'
+                }}
+                src='https://images.theconversation.com/files/617201/original/file-20240904-16-xvj31z.png'
                 sizes='(max-width: 599px) 100px, (min-width: 600px) 100px, 100px'
               />
             </div>
@@ -350,12 +411,19 @@ export default function PigButcheringSection() {
             <div className='absolute bottom-1 right-2 flex gap-1 text-sm text-neutral-400'>
               <p>10:24 pm</p>
 
-              <img
+              <Imgix
                 className='inline w-5'
-                loading='eager'
-                data-path='files/617201/original/file-20240904-16-xvj31z.png'
-                alt=''
-                data-params='{}'
+                imgixParams={{
+                  fit: 'crop',
+                  auto: 'format',
+                  q: 30
+                }}
+                htmlAttributes={{
+                  loading: 'lazy',
+                  width: '100%',
+                  height: 'auto'
+                }}
+                src='https://images.theconversation.com/files/617201/original/file-20240904-16-xvj31z.png'
                 sizes='(max-width: 599px) 100px, (min-width: 600px) 100px, 100px'
               />
             </div>
@@ -402,12 +470,19 @@ export default function PigButcheringSection() {
             <div className='absolute bottom-1 right-2 flex gap-1 text-sm text-neutral-400'>
               <p>1:20 pm</p>
 
-              <img
+              <Imgix
                 className='inline w-5'
-                loading='eager'
-                data-path='files/617201/original/file-20240904-16-xvj31z.png'
-                alt=''
-                data-params='{}'
+                imgixParams={{
+                  fit: 'crop',
+                  auto: 'format',
+                  q: 30
+                }}
+                htmlAttributes={{
+                  loading: 'lazy',
+                  width: '100%',
+                  height: 'auto'
+                }}
+                src='https://images.theconversation.com/files/617201/original/file-20240904-16-xvj31z.png'
                 sizes='(max-width: 599px) 100px, (min-width: 600px) 100px, 100px'
               />
             </div>
@@ -430,12 +505,19 @@ export default function PigButcheringSection() {
             <div className='absolute bottom-1 right-2 flex gap-1 text-sm text-neutral-400'>
               <p>10:22 pm</p>
 
-              <img
+              <Imgix
                 className='inline w-5'
-                loading='eager'
-                data-path='files/617201/original/file-20240904-16-xvj31z.png'
-                alt=''
-                data-params='{}'
+                imgixParams={{
+                  fit: 'crop',
+                  auto: 'format',
+                  q: 30
+                }}
+                htmlAttributes={{
+                  loading: 'lazy',
+                  width: '100%',
+                  height: 'auto'
+                }}
+                src='https://images.theconversation.com/files/617201/original/file-20240904-16-xvj31z.png'
                 sizes='(max-width: 599px) 100px, (min-width: 600px) 100px, 100px'
               />
             </div>
@@ -458,12 +540,19 @@ export default function PigButcheringSection() {
             <p>Awkward, huh?</p>
             <div className='absolute bottom-1 right-2 flex gap-1 text-sm text-neutral-400'>
               <p>10:23 pm</p>
-              <img
+              <Imgix
                 className='inline w-5'
-                loading='eager'
-                data-path='files/617201/original/file-20240904-16-xvj31z.png'
-                alt=''
-                data-params='{}'
+                imgixParams={{
+                  fit: 'crop',
+                  auto: 'format',
+                  q: 30
+                }}
+                htmlAttributes={{
+                  loading: 'lazy',
+                  width: '100%',
+                  height: 'auto'
+                }}
+                src='https://images.theconversation.com/files/617201/original/file-20240904-16-xvj31z.png'
                 sizes='(max-width: 599px) 100px, (min-width: 600px) 100px, 100px'
               />
             </div>
@@ -491,32 +580,41 @@ export default function PigButcheringSection() {
 
           <div
             ref={(el) => el && messageFinalRef.current.push(el)}
-            className='message_bubble message_bubble_right relative my-4 ml-auto rounded-b-lg rounded-l-lg bg-[#e2ffc7] p-3 pb-5 text-neutral-900 drop-shadow-lg'
+            className='message_bubble message_bubble_right relative my-4 ml-auto w-full rounded-b-lg rounded-l-lg bg-[#e2ffc7] p-3 pb-5 text-neutral-900 drop-shadow-lg'
           >
-            <img
-              className='mb-4 rounded-md'
-              loading='eager'
-              alt=''
-              sizes='(max-width: 599px) 100vw, (min-width: 600px) 750px, 800px'
-              srcSet='
-            https://images.theconversation.com/files/617433/original/file-20240905-20-r0bpnm.jpg?ixlib=rb-4.1.0&amp;q=45&amp;auto=format,compress&amp;cs=srgb&amp;w=600&amp;fit=crop&amp;dpr=1  600w,
-            https://images.theconversation.com/files/617433/original/file-20240905-20-r0bpnm.jpg?ixlib=rb-4.1.0&amp;q=30&amp;auto=format,compress&amp;cs=srgb&amp;w=600&amp;fit=crop&amp;dpr=2 1200w,
-            https://images.theconversation.com/files/617433/original/file-20240905-20-r0bpnm.jpg?ixlib=rb-4.1.0&amp;q=15&amp;auto=format,compress&amp;cs=srgb&amp;w=600&amp;fit=crop&amp;dpr=3 1800w,
-            https://images.theconversation.com/files/617433/original/file-20240905-20-r0bpnm.jpg?ixlib=rb-4.1.0&amp;q=45&amp;auto=format,compress&amp;cs=srgb&amp;w=754&amp;fit=crop&amp;dpr=1  754w,
-            https://images.theconversation.com/files/617433/original/file-20240905-20-r0bpnm.jpg?ixlib=rb-4.1.0&amp;q=30&amp;auto=format,compress&amp;cs=srgb&amp;w=754&amp;fit=crop&amp;dpr=2 1508w,
-            https://images.theconversation.com/files/617433/original/file-20240905-20-r0bpnm.jpg?ixlib=rb-4.1.0&amp;q=15&amp;auto=format,compress&amp;cs=srgb&amp;w=754&amp;fit=crop&amp;dpr=3 2262w
-          '
-              src='https://images.theconversation.com/files/617433/original/file-20240905-20-r0bpnm.jpg?ixlib=rb-4.1.0&amp;q=45&amp;auto=format,compress&amp;cs=srgb&amp;w=754&amp;fit=clip'
-            />
+            <div className='mb-4'>
+              <Imgix
+                className='aspect-[458/387] h-auto w-full rounded-md object-cover'
+                imgixParams={{
+                  fit: 'crop',
+                  auto: 'format',
+                  q: 15
+                }}
+                htmlAttributes={{
+                  loading: 'lazy',
+                  width: '100%',
+                  height: 'auto'
+                }}
+                src='https://images.theconversation.com/files/617433/original/file-20240905-20-r0bpnm.jpg'
+                sizes='(max-width: 599px) 100vw, (min-width: 600px) 750px, 800px'
+              />
+            </div>
             <div className='absolute bottom-1 right-2 flex gap-1 text-sm text-neutral-400'>
               <p>10:23 pm</p>
 
-              <img
+              <Imgix
                 className='inline w-5'
-                loading='eager'
-                data-path='files/617201/original/file-20240904-16-xvj31z.png'
-                alt=''
-                data-params='{}'
+                imgixParams={{
+                  fit: 'crop',
+                  auto: 'format',
+                  q: 30
+                }}
+                htmlAttributes={{
+                  loading: 'lazy',
+                  width: '100%',
+                  height: 'auto'
+                }}
+                src='https://images.theconversation.com/files/617201/original/file-20240904-16-xvj31z.png'
                 sizes='(max-width: 599px) 100px, (min-width: 600px) 100px, 100px'
               />
             </div>
@@ -530,12 +628,19 @@ export default function PigButcheringSection() {
             <div className='absolute bottom-1 right-2 flex gap-1 text-sm text-neutral-400'>
               <p>10:23 pm</p>
 
-              <img
+              <Imgix
                 className='inline w-5'
-                loading='eager'
-                data-path='files/617201/original/file-20240904-16-xvj31z.png'
-                alt=''
-                data-params='{}'
+                imgixParams={{
+                  fit: 'crop',
+                  auto: 'format',
+                  q: 30
+                }}
+                htmlAttributes={{
+                  loading: 'lazy',
+                  width: '100%',
+                  height: 'auto'
+                }}
+                src='https://images.theconversation.com/files/617201/original/file-20240904-16-xvj31z.png'
                 sizes='(max-width: 599px) 100px, (min-width: 600px) 100px, 100px'
               />
             </div>
