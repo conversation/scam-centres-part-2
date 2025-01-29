@@ -15,7 +15,7 @@ export default function PhrasebookScramble() {
         .timeline({
           scrollTrigger: {
             // markers: true,
-            trigger: sectionRef.current,
+            trigger: '.phrasebookImg',
             start: 'center center',
             end: 'center center',
             onEnterBack: () => {
@@ -25,10 +25,14 @@ export default function PhrasebookScramble() {
             }
           }
         })
-        .to('.scramble_wrapper img', {
-          duration: 0.4,
-          opacity: 0.2
-        })
+        .fromTo(
+          '.scramble_wrapper img',
+          { opacity: 1 },
+          {
+            duration: 0.4,
+            opacity: 0.2
+          }
+        )
         .to(
           '#scramble1',
           {
@@ -72,7 +76,7 @@ export default function PhrasebookScramble() {
 
       ScrollTrigger.create({
         // markers: true,
-        trigger: sectionRef.current,
+        trigger: '.phrasebookImg',
         start: 'top bottom',
         end: 'bottom top',
         onLeave: () => tl.restart().pause(),
@@ -83,12 +87,12 @@ export default function PhrasebookScramble() {
   )
 
   return (
-    <section className='scramble_wrapper relative w-full text-xs sm:text-sm lg:text-lg' ref={sectionRef}>
+    <section className='scramble_wrapper relative w-full text-sm md:text-lg' ref={sectionRef}>
       <Image
         src='https://images.theconversation.com/files/620411/original/file-20240919-16-tzhkq1.png'
         align=''
         className=''
-        imgClassName='aspect-[927/634]'
+        imgClassName='aspect-[927/634] object-contain phrasebookImg max-h-none'
         loading='eager'
         caption='Handwritten copy of some passages of a scam phrase book'
         alt='Handwritten copy of some passages of a scam phrase book'
@@ -96,14 +100,14 @@ export default function PhrasebookScramble() {
         sourceLink='https://mp.weixin.qq.com/s/zWe0PWrW3TUQlGnX67ZFKA'
       />
 
-      <div className='not-prose absolute left-1/2 top-0 h-full w-image-width -translate-x-1/2'>
-        <div className='absolute left-[5%] top-[5%] w-[95%] md:w-[80%]'>
+      <div className='not-prose absolute left-1/2 top-0 aspect-[927/634] w-full -translate-x-1/2 md:w-image-width'>
+        <div className='absolute left-[3%] top-[5%]'>
           <span id='scramble1' className='bg-neutral-900 py-1'></span>
         </div>
-        <div className='absolute left-[5%] top-[25%] w-[95%] md:top-[30%] md:w-[90%]'>
+        <div className='absolute left-[3%] top-[41%]'>
           <span id='scramble2' className='bg-neutral-900 py-1'></span>
         </div>
-        <div className='absolute left-[5%] top-[50%] w-[95%] md:top-[60%] md:w-[90%]'>
+        <div className='absolute left-[3%] top-[69%] max-sm:hidden'>
           <span id='scramble3' className='bg-neutral-900 py-1'></span>
         </div>
       </div>
