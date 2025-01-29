@@ -70,7 +70,7 @@ export default function Image({
   return (
     <figure className={cn('', figureAlignmentClass, className)}>
       <Imgix
-        className={cn('max-h-[70vh] object-contain', imgClassName)}
+        className={cn('object-contain', imgClassName)}
         {...commonProps}
         htmlAttributes={{
           loading: loading,
