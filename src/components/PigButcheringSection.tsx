@@ -49,7 +49,7 @@ export default function PigButcheringSection() {
 
           <div
             ref={(el) => el && messageInitialRef.current.push(el)}
-            className='message_bubble message_bubble_right relative my-4 ml-auto rounded-b-lg rounded-l-lg bg-[#e2ffc7] p-3 pb-5 text-neutral-900 drop-shadow-lg'
+            className='message_bubble message_bubble_right relative my-4 ml-auto rounded-b-lg rounded-l-lg bg-[#e2ffc7] p-3 pb-5 text-neutral-900 opacity-100 drop-shadow-lg'
           >
             <p>No, sorry, I do not know Anna and cannot do translation.</p>
             <div className='absolute bottom-1 right-2 flex gap-1 text-sm text-neutral-400'>
