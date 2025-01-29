@@ -12,6 +12,7 @@ import Readmore from './components/Readmore'
 import TitleTextBorder from './components/TitleTextBorder'
 import TitleImage from './components/TitleImage'
 import Tweet1 from './components/Tweet1'
+import Imgix from 'react-imgix'
 
 <ArticleSetup
   theme='dark'
@@ -45,14 +46,21 @@ import Tweet1 from './components/Tweet1'
       <div className='absolute bottom-1 right-2 flex gap-1 text-sm text-neutral-400'>
         <p>9:56 am</p>
 
-        <img
-          className='inline w-5'
-          loading='eager'
-          data-path='files/617201/original/file-20240904-16-xvj31z.png'
-          alt=''
-          data-params='{}'
-          sizes='(max-width: 599px) 100px, (min-width: 600px) 100px, 100px'
-        />
+        <Imgix
+                className='inline w-5'
+                imgixParams={{
+                  fit: 'crop',
+                  auto: 'format',
+                  q: 30
+                }}
+                htmlAttributes={{
+                  loading: 'lazy',
+                  width: '100%',
+                  height: 'auto'
+                }}
+                src='https://images.theconversation.com/files/617201/original/file-20240904-16-xvj31z.png'
+                sizes='(max-width: 599px) 100px, (min-width: 600px) 100px, 100px'
+              />
       </div>
     </div>
   </div>
