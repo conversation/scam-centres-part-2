@@ -2,6 +2,7 @@ import Picture from './Picture'
 import { useRef } from 'react'
 import gsap from 'gsap'
 import { useGSAP } from '@gsap/react'
+import TitleTextBorder from './TitleTextBorder'
 
 export default function TitleImage() {
   const sectionRef = useRef<HTMLDivElement>(null)
@@ -20,14 +21,14 @@ export default function TitleImage() {
   )
 
   return (
-    <div ref={sectionRef}>
+    <div ref={sectionRef} className='h-screen'>
       <Picture
         src='https://images.theconversation.com/files/611288/original/file-20240805-19-7eu4yr.jpg'
         loading='eager'
-        className='full_screen_media not-prose absolute left-0 top-0 z-0 !h-[50vh] overflow-hidden opacity-50'
-        imgClassName='not_fullscreen_media w-screen h-[50vh] object-cover object-bottom title_picture'
+        className='full_screen_media make_visible not-prose before:contents-[""] absolute left-0 top-0 overflow-clip before:absolute before:bottom-[-1px] before:left-0 before:z-10 before:h-full before:w-full before:bg-gradient-to-t before:from-neutral-800'
+        imgClassName='title_picture brightness-75'
         caption=''
-        source='Photo: Roun Ry'
+        source=''
         sourceLink=''
         alt='Drone shot of balconies taken from the courtyard of the Jinshui compound in Otres Village, Sihanoukville.'
         focalPoint={{
@@ -38,6 +39,38 @@ export default function TitleImage() {
           desktop: { x: 0.5, y: 0.5 }
         }}
       />
+
+      <div className='relative z-10 h-screen place-content-center pt-14'>
+        <div className='z-10 mx-auto max-w-[45ch] text-center'>
+          <TitleTextBorder
+            as={'h1'}
+            className='text-balance text-center font-base text-5xl font-bold md:text-6xl lg:text-7xl'
+          >
+            Scam Factories
+          </TitleTextBorder>
+          <br />
+        </div>
+
+        <div className='mx-auto max-w-[35ch] text-center'>
+          <TitleTextBorder as={'h1'} className='text-center font-body text-xl font-bold md:text-3xl'>
+            Survival stories from inside Southeast Asia’s brutal scamming industry
+          </TitleTextBorder>
+        </div>
+
+        <h3 className='text-center font-body'>Part two: Anatomy of a scam</h3>
+
+        <div className='text-center'>
+          <span className='inline-block font-base text-sm'>
+            By <a href='https://theconversation.com/profiles/ivan-franceschini-1529038'>Ivan Franceschini</a>,{' '}
+            <a href='https://theconversation.com/profiles/ling-li-1529042'>Ling Li</a> and The Conversation Digital
+            Storytelling Team.
+          </span>
+          <br />
+          <span className='font-base text-xs opacity-50'>
+            Published: <time className=''>{new Date().toDateString()}</time>
+          </span>
+        </div>
+      </div>
     </div>
   )
 }
