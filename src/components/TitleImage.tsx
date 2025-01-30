@@ -57,7 +57,7 @@ export default function TitleImage() {
           </TitleTextBorder>
         </div>
 
-        <h3 className='text-center font-body'>Part two: Anatomy of a scam</h3>
+        <h3 className='text-center font-body'>Part two: anatomy of a scam</h3>
 
         <div className='text-center'>
           <span className='inline-block font-base text-sm'>
