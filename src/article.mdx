@@ -28,20 +28,14 @@ import Imgix from 'react-imgix'
 
 <figure className='not-prose my-10'>
   <div className='mx-auto max-w-[600px] px-8 font-base'>
-    <div
-
-      className='message_bubble message_bubble_left relative mb-2 mr-auto rounded-b-lg rounded-r-lg bg-neutral-50 p-3 pb-5 text-neutral-900 opacity-100 drop-shadow-lg'
-    >
+    <div className='message_bubble message_bubble_left relative mb-2 mr-auto rounded-b-lg rounded-r-lg bg-neutral-50 p-3 pb-5 text-neutral-900 opacity-100 drop-shadow-lg'>
       <p>Hello, are you the person Anna recommended to do the translation service for me?</p>
       <div className='absolute bottom-1 right-2 flex gap-1 text-sm text-neutral-400'>
         <p>9:56 am</p>
       </div>
     </div>
 
-    <div
-
-      className='message_bubble message_bubble_right relative my-4 ml-auto rounded-b-lg rounded-l-lg bg-[#e2ffc7] p-3 pb-5 text-neutral-900 opacity-100 drop-shadow-lg'
-    >
+    <div className='message_bubble message_bubble_right relative my-4 ml-auto rounded-b-lg rounded-l-lg bg-[#e2ffc7] p-3 pb-5 text-neutral-900 opacity-100 drop-shadow-lg'>
       <p>No, sorry, I do not know Anna and cannot do translation.</p>
       <div className='absolute bottom-1 right-2 flex gap-1 text-sm text-neutral-400'>
         <p>9:56 am</p>
@@ -96,8 +90,14 @@ When a victim begins to get suspicious or asks to cash out, the scammers will mo
 
 One pig butchering scam victim who spoke to us described how she was approached through WhatsApp.
 
-
 <PigButcheringSection />
+
+<div className='relative my-10 grid grid-cols-[minmax(5rem,10%)_1fr] sm:grid-cols-[minmax(8rem,10%)_1fr] gap-4 border-y border-neutral-500 py-4'>
+  <div className='not-prose aspect-square w-full overflow-hidden rounded-md'>
+    <img src="https://images.theconversation.com/files/643993/original/file-20250122-15-av4juc.jpg?ixlib=rb-4.1.0&q=45&auto=format&w=754&h=1000&fit=crop&dpr=1" alt='' className='not_fullscreen_media' />
+  </div>
+  <p className='!mb-0 !mt-0 italic'>Scam Factories is a special multimedia and podcast series by The Conversation. Listen to part 1 of the <a href='#' target='_parent' className='text-neutral-100 hover:text-neutral-200'>podcast series here</a>. Read part 3 of the digital series, <a href='https://scam-factories-rise-of-an-industry.netlify.app/' target='_blank' className='text-neutral-100 hover:text-neutral-200'>Rise of The Industry, here</a>.</p>
+</div>
 
 ## The fake officials
 
@@ -177,7 +177,7 @@ In part three of our series tomorrow, we’ll look more closely at the rapid gro
         affiliationLink=''
         imgSrc='https://cdn.theconversation.com/avatars/470587/width238/image-20191027-113962-mmopio.jpg'
         profileLink='https://theconversation.com/profiles/justin-bergman-470587'
-        title='Senior Editor'
+        title='International Affairs Editor'
       />
 
       <Author
