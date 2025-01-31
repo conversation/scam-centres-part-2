@@ -66,7 +66,7 @@ export default function TitleImage() {
             Storytelling Team.
           </span>
           <br />
-          <span className='font-base text-xs opacity-50'>
+          <span className='font-base text-xs'>
             Published: <time className=''>{new Date().toDateString()}</time>
           </span>
         </div>
