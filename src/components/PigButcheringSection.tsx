@@ -75,22 +75,6 @@ export default function PigButcheringSection() {
                 src='https://images.theconversation.com/files/617201/original/file-20240904-16-xvj31z.png'
                 sizes='(max-width: 599px) 100px, (min-width: 600px) 100px, 100px'
               />
-
-              {/* <Imgix
-                className='inline w-5'
-                imgixParams={{
-                  fit: 'crop',
-                  auto: 'format',
-                  q: 30
-                }}
-                htmlAttributes={{
-                  loading: 'lazy',
-                  width: '100%',
-                  height: 'auto'
-                }}
-                src='https://images.theconversation.com/files/617201/original/file-20240904-16-xvj31z.png'
-                sizes='(max-width: 599px) 100px, (min-width: 600px) 100px, 100px'
-              /> */}
             </div>
           </div>
 
