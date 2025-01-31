@@ -53,7 +53,7 @@ export default function TitleImage() {
 
         <div className='mx-auto max-w-[35ch] text-center'>
           <TitleTextBorder as={'h1'} className='text-center font-body text-xl font-bold md:text-3xl'>
-            Survival stories from inside Southeast Asia’s brutal scamming industry
+            Inside Southeast Asia’s brutal scam compounds
           </TitleTextBorder>
         </div>
 
