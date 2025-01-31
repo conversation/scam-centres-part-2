@@ -36,6 +36,10 @@ export default function PigButcheringSection() {
 
   return (
     <section ref={sectionRef}>
+      <div className='my-8 grid w-full place-items-center'>
+        <div className='loader'></div>
+      </div>
+      
       <figure className='not-prose my-10' id='message_bubbles_initial'>
         <div className='mx-auto max-w-[600px] px-8 font-base'>
           <div
@@ -216,7 +220,7 @@ export default function PigButcheringSection() {
         </div>
       </figure>
 
-      <p>One day after this innocuous exchange the scammer got back in touch...</p>
+      <p>One pig butchering scam victim who spoke to us described how the scam progressed through WhatsApp.</p>
 
       <figure className='not-prose mx-auto my-10 max-w-[600px] px-8 font-base'>
         <div className='message_bubble message_bubble_left relative mb-2 mr-auto rounded-b-lg rounded-r-lg bg-neutral-50 p-3 pb-5 text-neutral-900 opacity-100 drop-shadow-lg'>
