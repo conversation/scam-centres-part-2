@@ -16,7 +16,7 @@ export default function PhrasebookScramble() {
           scrollTrigger: {
             // markers: true,
             trigger: '.phrasebookImg',
-            start: 'center center',
+            start: 'top center',
             end: 'center center',
             onEnterBack: () => {
               if (tl.paused()) {
